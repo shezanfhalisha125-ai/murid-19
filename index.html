@@ -1,0 +1,1443 @@
+
+
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Biodata | Shezan</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* ==============================
+
+           RESET & GLOBAL STYLE
+
+        ============================== */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            scroll-behavior: smooth;
+
+        }
+
+        :root {
+
+            --pink: #E8A6BD;
+
+            --pink-dark: #C77F9D;
+
+            --pink-light: #FBE8EF;
+
+            --pink-soft: #FFF5F8;
+
+            --lavender: #EFE6F4;
+
+            --white: #FFFFFF;
+
+            --dark: #694C5B;
+
+            --text: #806B77;
+
+        }
+
+        body {
+
+            font-family: 'Poppins', sans-serif;
+
+            background: var(--pink-soft);
+
+            color: var(--text);
+
+            overflow-x: hidden;
+
+        }
+
+        a {
+
+            text-decoration: none;
+
+        }
+
+        .container {
+
+            width: 88%;
+
+            max-width: 1100px;
+
+            margin: auto;
+
+        }
+
+        section {
+
+            padding: 90px 0;
+
+            scroll-margin-top: 75px;
+
+        }
+
+        .section-title {
+
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 36px;
+
+            color: var(--dark);
+
+            text-align: center;
+
+        }
+
+        .section-desc {
+
+            text-align: center;
+
+            font-size: 14px;
+
+            margin-bottom: 40px;
+
+        }
+
+        /* ==============================
+
+           NAVIGATION BAR
+
+        ============================== */
+
+        header {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            background: rgba(255, 245, 248, 0.95);
+
+            backdrop-filter: blur(12px);
+
+            box-shadow: 0 3px 15px rgba(180, 120, 145, 0.10);
+
+        }
+
+        nav {
+
+            height: 75px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        .logo {
+
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 27px;
+
+            font-weight: 700;
+
+            color: var(--pink-dark);
+
+        }
+
+        .nav-menu {
+
+            display: flex;
+
+            list-style: none;
+
+            gap: 30px;
+
+        }
+
+        .nav-menu a {
+
+            color: var(--dark);
+
+            font-size: 13px;
+
+            font-weight: 500;
+
+            transition: 0.3s;
+
+        }
+
+        .nav-menu a:hover {
+
+            color: var(--pink-dark);
+
+        }
+
+        .menu-toggle {
+
+            display: none;
+
+            background: none;
+
+            border: none;
+
+            font-size: 26px;
+
+            color: var(--dark);
+
+            cursor: pointer;
+
+        }
+
+        /* ==============================
+
+           HOME SECTION
+
+        ============================== */
+
+        #home {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            padding-top: 110px;
+
+            background:
+
+                radial-gradient(circle at 10% 20%, #F7DCE7, transparent 35%),
+
+                radial-gradient(circle at 90% 80%, #EDE2F4, transparent 35%),
+
+                var(--pink-soft);
+
+        }
+
+        .home-content {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 50px;
+
+        }
+
+        .home-text {
+
+            flex: 1;
+
+        }
+
+        .greeting {
+
+            color: var(--pink-dark);
+
+            font-size: 14px;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 15px;
+
+        }
+
+        .home-text h1 {
+
+            font-family: 'Baloo 2', cursive;
+
+            font-size: clamp(45px, 6vw, 65px);
+
+            line-height: 1.15;
+
+            color: var(--dark);
+
+        }
+
+        .home-text h1 span {
+
+            color: var(--pink-dark);
+
+        }
+
+        .home-text p {
+
+            max-width: 480px;
+
+            line-height: 1.9;
+
+            font-size: 14px;
+
+            margin: 20px 0 30px;
+
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            padding: 13px 28px;
+
+            background: var(--pink);
+
+            color: white;
+
+            border-radius: 30px;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+
+        }
+
+        .btn:hover {
+
+            background: var(--pink-dark);
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 8px 20px #EBC5D5;
+
+        }
+
+        .profile-area {
+
+            flex: 1;
+
+            display: flex;
+
+            justify-content: center;
+
+            position: relative;
+
+        }
+
+        .profile-box {
+
+            width: 300px;
+
+            height: 350px;
+
+            background: linear-gradient(145deg, #F4C8D9, #E8DDF1);
+
+            border: 9px solid white;
+
+            border-radius: 150px 150px 35px 35px;
+
+            box-shadow: 0 15px 35px rgba(180, 120, 150, 0.18);
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            animation: floating 4s ease-in-out infinite;
+
+        }
+
+        .profile-box span {
+
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 85px;
+
+            color: white;
+
+            font-weight: bold;
+
+        }
+
+        .flower {
+
+            position: absolute;
+
+            font-size: 35px;
+
+        }
+
+        .flower.one {
+
+            top: 5px;
+
+            right: 10%;
+
+        }
+
+        .flower.two {
+
+            bottom: 10px;
+
+            left: 10%;
+
+        }
+
+        @keyframes floating {
+
+            0%, 100% {
+
+                transform: translateY(0);
+
+            }
+
+            50% {
+
+                transform: translateY(-15px);
+
+            }
+
+        }
+
+        /* ==============================
+
+           ABOUT ME SECTION
+
+        ============================== */
+
+        #about {
+
+            background: white;
+
+        }
+
+        .about-card {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            padding: 40px;
+
+            background: var(--pink-soft);
+
+            border-radius: 25px;
+
+            box-shadow: 0 8px 25px rgba(180, 120, 150, 0.08);
+
+            text-align: center;
+
+        }
+
+        .about-card p {
+
+            font-size: 14px;
+
+            line-height: 2;
+
+            margin-bottom: 15px;
+
+        }
+
+        .biodata-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 18px;
+
+            margin-top: 30px;
+
+            text-align: left;
+
+        }
+
+        .biodata-item {
+
+            background: white;
+
+            padding: 20px;
+
+            border-radius: 15px;
+
+            border: 1px solid #F3D9E4;
+
+            transition: 0.3s;
+
+        }
+
+        .biodata-item:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 8px 18px #F4DDE7;
+
+        }
+
+        .biodata-item small {
+
+            display: block;
+
+            color: var(--pink-dark);
+
+            font-size: 12px;
+
+            margin-bottom: 5px;
+
+        }
+
+        .biodata-item strong {
+
+            color: var(--dark);
+
+            font-size: 14px;
+
+        }
+
+        /* ==============================
+
+           HOBBY SECTION
+
+        ============================== */
+
+        #hobby {
+
+            background: var(--pink-soft);
+
+        }
+
+        .hobby-card {
+
+            max-width: 800px;
+
+            margin: auto;
+
+            padding: 35px;
+
+            background: white;
+
+            border-radius: 25px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+
+            box-shadow: 0 8px 25px rgba(180, 120, 150, 0.08);
+
+            transition: 0.3s;
+
+        }
+
+        .hobby-card:hover {
+
+            transform: translateY(-7px);
+
+        }
+
+        .hobby-icon {
+
+            min-width: 140px;
+
+            height: 140px;
+
+            background: var(--pink-light);
+
+            border-radius: 25px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 65px;
+
+        }
+
+        .hobby-info h3 {
+
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 27px;
+
+            color: var(--dark);
+
+            margin-bottom: 10px;
+
+        }
+
+        .hobby-info p {
+
+            font-size: 14px;
+
+            line-height: 1.9;
+
+        }
+
+        /* ==============================
+
+           DREAM SECTION
+
+        ============================== */
+
+        #dream {
+
+            background: white;
+
+        }
+
+        .dream-card {
+
+            max-width: 800px;
+
+            margin: auto;
+
+            padding: 45px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            background: linear-gradient(135deg, #FBE4ED, #EEE5F5);
+
+            transition: 0.3s;
+
+        }
+
+        .dream-card:hover {
+
+            transform: scale(1.02);
+
+        }
+
+        .dream-icon {
+
+            font-size: 65px;
+
+            margin-bottom: 15px;
+
+        }
+
+        .dream-card h3 {
+
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 28px;
+
+            color: var(--dark);
+
+            margin-bottom: 15px;
+
+        }
+
+        .dream-card p {
+
+            font-size: 14px;
+
+            line-height: 2;
+
+        }
+
+        /* ==============================
+
+           CLOSING SECTION
+
+        ============================== */
+
+        #closing {
+
+            background: var(--pink-soft);
+
+            text-align: center;
+
+        }
+
+        .closing-card {
+
+            background: white;
+
+            padding: 50px 25px;
+
+            border-radius: 25px;
+
+            box-shadow: 0 8px 25px rgba(180, 120, 150, 0.08);
+
+        }
+
+        .closing-card h2 {
+
+            font-family: 'Baloo 2', cursive;
+
+            font-size: 35px;
+
+            color: var(--pink-dark);
+
+            margin-bottom: 15px;
+
+        }
+
+        .closing-card p {
+
+            font-size: 14px;
+
+            line-height: 2;
+
+        }
+
+        /* ==============================
+
+           FOOTER
+
+        ============================== */
+
+        footer {
+
+            padding: 25px;
+
+            text-align: center;
+
+            background: #F4DCE6;
+
+            color: #926C7D;
+
+            font-size: 12px;
+
+        }
+
+        footer p {
+
+            margin: 5px;
+
+        }
+
+        /* ==============================
+
+           SCROLL ANIMATION
+
+        ============================== */
+
+        .reveal {
+
+            opacity: 0;
+
+            transform: translateY(35px);
+
+            transition: all 0.8s ease;
+
+        }
+
+        .reveal.active {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+        /* ==============================
+
+           RESPONSIVE DESIGN
+
+        ============================== */
+
+        @media screen and (max-width: 768px) {
+
+            .container {
+
+                width: 90%;
+
+            }
+
+            .menu-toggle {
+
+                display: block;
+
+            }
+
+            .nav-menu {
+
+                position: absolute;
+
+                top: 75px;
+
+                left: 0;
+
+                width: 100%;
+
+                background: var(--pink-soft);
+
+                display: none;
+
+                flex-direction: column;
+
+                align-items: center;
+
+                gap: 0;
+
+                box-shadow: 0 8px 15px rgba(180, 120, 150, 0.1);
+
+            }
+
+            .nav-menu.show {
+
+                display: flex;
+
+            }
+
+            .nav-menu li {
+
+                padding: 15px;
+
+            }
+
+            .home-content {
+
+                flex-direction: column-reverse;
+
+                text-align: center;
+
+            }
+
+            .home-text p {
+
+                margin-left: auto;
+
+                margin-right: auto;
+
+            }
+
+            .profile-box {
+
+                width: 240px;
+
+                height: 280px;
+
+            }
+
+            .profile-box span {
+
+                font-size: 70px;
+
+            }
+
+            .biodata-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .hobby-card {
+
+                flex-direction: column;
+
+                text-align: center;
+
+            }
+
+            .section-title {
+
+                font-size: 30px;
+
+            }
+
+            .about-card,
+
+            .hobby-card,
+
+            .dream-card {
+
+                padding: 25px;
+
+            }
+
+        }
+
+        @media screen and (max-width: 400px) {
+
+            .home-text h1 {
+
+                font-size: 40px;
+
+            }
+
+            .profile-box {
+
+                width: 210px;
+
+                height: 250px;
+
+            }
+
+            .closing-card h2 {
+
+                font-size: 27px;
+
+            }
+
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+
+            *::before,
+
+            *::after {
+
+                scroll-behavior: auto !important;
+
+                animation: none !important;
+
+                transition: none !important;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ==============================
+
+         NAVIGATION BAR
+
+    ============================== -->
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <a href="#home" class="logo">
+
+                    Shezan ♡
+
+                </a>
+
+                <button
+
+                    class="menu-toggle"
+
+                    id="menuToggle"
+
+                    aria-label="Buka menu"
+
+                    aria-expanded="false">
+
+                    ☰
+
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About Me</a></li>
+
+                    <li><a href="#hobby">My Hobby</a></li>
+
+                    <li><a href="#dream">My Dream</a></li>
+
+                    <li><a href="#closing">Closing</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ==============================
+
+         HOME
+
+    ============================== -->
+
+    <section id="home">
+
+        <div class="container home-content">
+
+            <div class="home-text reveal">
+
+                <p class="greeting">
+
+                    WELCOME TO MY PERSONAL WEBSITE
+
+                </p>
+
+                <h1>
+
+                    Hello, I'm<br>
+
+                    <span>Shezan Falisha!</span>
+
+                </h1>
+
+                <p>
+
+                    Halo! Selamat datang di website personal
+
+                    profile milikku. Yuk, kenali lebih jauh
+
+                    tentang diriku, hobiku, dan cita-citaku.
+
+                </p>
+
+                <a href="#about" class="btn">
+
+                    Get to Know Me ♡
+
+                </a>
+
+            </div>
+
+            <div class="profile-area reveal">
+
+                <div class="profile-box">
+
+                    <span>SF</span>
+
+                </div>
+
+                <div class="flower one">🌸</div>
+
+                <div class="flower two">♡</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==============================
+
+         ABOUT ME
+
+    ============================== -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <h2 class="section-title reveal">
+
+                About Me ♡
+
+            </h2>
+
+            <p class="section-desc reveal">
+
+                A Little Information About Myself
+
+            </p>
+
+            <div class="about-card reveal">
+
+                <p>
+
+                    Halo! Perkenalkan, namaku
+
+                    <strong>Shezan Falisha Lashira</strong>,
+
+                    biasanya dipanggil Shezan.
+
+                    Aku berusia 15 tahun dan berasal dari
+
+                    Kota Bandung.
+
+                </p>
+
+                <p>
+
+                    Saat ini aku merupakan siswi SMA kelas X.
+
+                    Aku memiliki hobi bermain basket dan
+
+                    mempunyai cita-cita menjadi seorang
+
+                    psikolog di masa depan.
+
+                </p>
+
+                <div class="biodata-grid">
+
+                    <div class="biodata-item">
+
+                        <small>Nama Lengkap</small>
+
+                        <strong>Shezan Falisha Lashira</strong>
+
+                    </div>
+
+                    <div class="biodata-item">
+
+                        <small>Nama Panggilan</small>
+
+                        <strong>Shezan</strong>
+
+                    </div>
+
+                    <div class="biodata-item">
+
+                        <small>Umur</small>
+
+                        <strong>15 Tahun</strong>
+
+                    </div>
+
+                    <div class="biodata-item">
+
+                        <small>Kota Asal</small>
+
+                        <strong>Bandung</strong>
+
+                    </div>
+
+                    <div class="biodata-item">
+
+                        <small>Pendidikan</small>
+
+                        <strong>SMA</strong>
+
+                    </div>
+
+                    <div class="biodata-item">
+
+                        <small>Kelas</small>
+
+                        <strong>X</strong>
+
+                    </div>
+
+                    <div class="biodata-item">
+
+                        <small>Hobi</small>
+
+                        <strong>Bermain Basket 🏀</strong>
+
+                    </div>
+
+                    <div class="biodata-item">
+
+                        <small>Cita-cita</small>
+
+                        <strong>Psikolog</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==============================
+
+         MY HOBBY
+
+    ============================== -->
+
+    <section id="hobby">
+
+        <div class="container">
+
+            <h2 class="section-title reveal">
+
+                My Hobby 🏀
+
+            </h2>
+
+            <p class="section-desc reveal">
+
+                Things That I Love
+
+            </p>
+
+            <div class="hobby-card reveal">
+
+                <div class="hobby-icon">
+
+                    🏀
+
+                </div>
+
+                <div class="hobby-info">
+
+                    <h3>Playing Basketball</h3>
+
+                    <p>
+
+                        Salah satu hobiku adalah bermain basket.
+
+                        Aku menyukai olahraga ini karena seru
+
+                        dan menyenangkan. Selain itu, bermain
+
+                        basket mengajarkanku tentang kerja sama,
+
+                        kedisiplinan, tanggung jawab, dan
+
+                        semangat pantang menyerah.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==============================
+
+         MY DREAM
+
+    ============================== -->
+
+    <section id="dream">
+
+        <div class="container">
+
+            <h2 class="section-title reveal">
+
+                My Dream ✨
+
+            </h2>
+
+            <p class="section-desc reveal">
+
+                Something I Want to Achieve
+
+            </p>
+
+            <div class="dream-card reveal">
+
+                <div class="dream-icon">
+
+                    🧠
+
+                </div>
+
+                <h3>Become a Psychologist</h3>
+
+                <p>
+
+                    Cita-citaku adalah menjadi seorang psikolog.
+
+                    Aku tertarik mempelajari ilmu psikologi
+
+                    karena ingin memahami pikiran, perasaan,
+
+                    dan perilaku manusia. Aku berharap suatu
+
+                    hari nanti bisa membantu banyak orang
+
+                    melalui ilmu yang aku pelajari.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==============================
+
+         CLOSING
+
+    ============================== -->
+
+    <section id="closing">
+
+        <div class="container">
+
+            <div class="closing-card reveal">
+
+                <h2>Thank You for Visiting! ♡</h2>
+
+                <p>
+
+                    Terima kasih sudah mengunjungi
+
+                    website personal profile milikku.
+
+                    <br>
+
+                    Senang bisa memperkenalkan diriku
+
+                    melalui website ini.
+
+                    <br>
+
+                    See you! 🌷
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==============================
+
+         FOOTER
+
+    ============================== -->
+
+    <footer>
+
+        <p>
+
+            Made with ♡ by Shezan Falisha Lashira
+
+        </p>
+
+        <p>
+
+            © <span id="year"></span> My Personal Biodata
+
+        </p>
+
+    </footer>
+
+    <!-- ==============================
+
+         JAVASCRIPT
+
+    ============================== -->
+
+    <script>
+
+        // MOBILE MENU
+
+        const menuToggle =
+
+            document.getElementById("menuToggle");
+
+        const navMenu =
+
+            document.getElementById("navMenu");
+
+        menuToggle.addEventListener("click", function() {
+
+            const isOpen =
+
+                navMenu.classList.toggle("show");
+
+            menuToggle.textContent =
+
+                isOpen ? "✕" : "☰";
+
+            menuToggle.setAttribute(
+
+                "aria-expanded",
+
+                isOpen
+
+            );
+
+        });
+
+        // CLOSE MENU AFTER CLICK
+
+        document.querySelectorAll(".nav-menu a")
+
+            .forEach(function(link) {
+
+                link.addEventListener("click", function() {
+
+                    navMenu.classList.remove("show");
+
+                    menuToggle.textContent = "☰";
+
+                    menuToggle.setAttribute(
+
+                        "aria-expanded",
+
+                        "false"
+
+                    );
+
+                });
+
+            });
+
+        // SCROLL REVEAL ANIMATION
+
+        const revealElements =
+
+            document.querySelectorAll(".reveal");
+
+        const observer = new IntersectionObserver(
+
+            function(entries) {
+
+                entries.forEach(function(entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("active");
+
+                        observer.unobserve(entry.target);
+
+                    }
+
+                });
+
+            },
+
+            {
+
+                threshold: 0.15
+
+            }
+
+        );
+
+        revealElements.forEach(function(element) {
+
+            observer.observe(element);
+
+        });
+
+        // AUTOMATIC FOOTER YEAR
+
+        document.getElementById("year").textContent =
+
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+
+</html>
